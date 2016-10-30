@@ -85,7 +85,7 @@ for url in proj_link_list:
     pledge_tier_list.append(pledge_tier)
     numBackers_tier_list.append(numBackers_tier)
 
-df = pd.DataFrame({'title':proj_title_list, 'url':proj_link_list, 'blurb':proj_blurb_list, 'num.backers':numBackers_list, 'currency':currency_type_list,'amt.pledged':amt_pledged_list,'goal':goal_list,'location':location_list,'category':category_list,'pledge.tier':pledge_tier_list,'num.backers.tier':numBackers_tier_list})
+df = pd.DataFrame({'by':proj_by_list, 'title':proj_title_list, 'url':proj_link_list, 'blurb':proj_blurb_list, 'num.backers':numBackers_list, 'currency':currency_type_list,'amt.pledged':amt_pledged_list,'goal':goal_list,'location':location_list,'category':category_list,'pledge.tier':pledge_tier_list,'num.backers.tier':numBackers_tier_list})
 
 #df.info()
 #display(df)
