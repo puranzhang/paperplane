@@ -9,6 +9,7 @@ import HTMLParser
 proj_link_list = []
 proj_title_list = []
 proj_blurb_list = []
+proj_by_list = []
 
 for num in range(200):
 
@@ -23,6 +24,9 @@ for num in range(200):
     # project blurb
     proj_blurb = soup.find_all("p", class_="project-profile-blurb type-12")
     proj_blurb_list += [s.string for s in proj_blurb]
+    proj_by = soup.find_all("p", class_="project-profile-byline type-12")
+    proj_by_str = HTMLParser.HTMLParser().unescape(str(proj_by))
+    proj_by_list += re.findall('by (.*?) and \d+[,\d+]* backers',proj_by_str)
 
 numBackers_list = []
 currency_type_list = []
