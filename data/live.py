@@ -3,7 +3,7 @@ import pandas as pd
 from bs4 import BeautifulSoup
 import urllib
 import re
-from IPython.display import display, HTML
+#from IPython.display import display, HTML
 import HTMLParser
 
 for num in range(200):
@@ -93,6 +93,6 @@ for num in range(200):
 df2 = df2.reset_index(drop=True)
 
 # display dataframe
-df2.info()
-display(df2)
+#df2.info()
+#display(df2)
 df2.to_csv('live.csv',encoding = 'UTF-8')

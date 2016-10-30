@@ -3,7 +3,7 @@ import pandas as pd
 from bs4 import BeautifulSoup
 import urllib
 import re
-from IPython.display import display, HTML
+#from IPython.display import display, HTML
 import HTMLParser
 
 proj_link_list = []
@@ -83,6 +83,6 @@ for url in proj_link_list:
 
 df = pd.DataFrame({'title':proj_title_list, 'url':proj_link_list, 'blurb':proj_blurb_list, 'num.backers':numBackers_list, 'currency':currency_type_list,'amt.pledged':amt_pledged_list,'goal':goal_list,'location':location_list,'category':category_list,'pledge.tier':pledge_tier_list,'num.backers.tier':numBackers_tier_list})
 
-df.info()
-display(df)
+#df.info()
+#display(df)
 df.to_csv('most_backed.csv',encoding = 'UTF-8')
