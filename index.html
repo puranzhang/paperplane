@@ -11760,7 +11760,22 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Background">Background<a class="anchor-link" href="#Background">&#182;</a></h2>
+<p><strong><a href="#Project-Proposal">Project Proposal</a> | <a href="#Data-Sources">Data Sources</a> | Key Plots <a href="#Key-Plot-1">1</a> , <a href="#Key-Plot-2">2</a> | <a href="#Future-Directions">Future Directions</a>| <a href="#More-Plots">More Plots</a></strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Background">Background<a class="anchor-link" href="#Background">&#182;</a></h2><p><figure>
+  <img src="/img/kickstarter-logo-light.png" alt="Kickstarter Logo" height="200">
+  <figcaption>Logo of Kickstarter</figcaption>
+</figure>
+Crowdfunding has become one of the main sources of initial capital for small businesses and start up companies that are looking to launch their first products. Websites like <a href="https://www.kickstarter.com">Kickstart</a> and <a href="https://www.indiegogo.com/">Indiegogo</a> provide a platform for millions of creators to present their innovative</p>
+
 </div>
 </div>
 </div>
@@ -11778,7 +11793,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Data-Source">Data Source<a class="anchor-link" href="#Data-Source">&#182;</a></h2>
+<p><a href="#">back to top</a></p>
+
 </div>
 </div>
 </div>
@@ -11787,7 +11803,20 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Plot-1">Plot 1<a class="anchor-link" href="#Plot-1">&#182;</a></h2>
+<h2 id="Data-Sources">Data Sources<a class="anchor-link" href="#Data-Sources">&#182;</a></h2>
+<pre><code>Last updated: 2016-10-29 6pm PDT
+
+</code></pre>
+<p>All of my raw data are scraped from <a href="https://www.kickstarter.com">Kickstarter.com</a>.</p>
+<p>There are currently two raw datasets:</p>
+<ol>
+<li><p><a href="https://github.com/socathie/paperplane/blob/master/data/live.csv">First 4000 live projects</a> that are currently campaigning on Kickstarter (scraped with Python <a href="https://github.com/socathie/paperplane/blob/master/data/live.py">code</a> using BeautifulSoup)</p>
+</li>
+<li><p><a href="https://github.com/socathie/paperplane/blob/master/data/most_backed.csv">Top 4000 most backed projects</a> ever on Kickstarter (scraped with this <a href="https://github.com/socathie/paperplane/blob/master/data/most_backed.py">code</a>)</p>
+</li>
+</ol>
+<h3 id="Limitations">Limitations<a class="anchor-link" href="#Limitations">&#182;</a></h3><h4 id="Kickstarter"><em>Kickstarter</em><a class="anchor-link" href="#Kickstarter">&#182;</a></h4><p>The website has certain rules for generating urls. For each seed value, the page number only goes up to at most 200. Given there are 20 projects per page, we can only get <strong>at most 4000 non-duplicated data entries per iteration</strong>. Therefore, if we want to analyze all of the 300,000+ projects on Kickstarter, we would need to generate a lot more seed values with a mix of different sorting orders to obtain a much larger sample before removing duplicated entries.</p>
+<h4 id="Indiegogo"><em>Indiegogo</em><a class="anchor-link" href="#Indiegogo">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -11796,7 +11825,46 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Plot-2">Plot 2<a class="anchor-link" href="#Plot-2">&#182;</a></h2>
+<p><a href="#">back to top</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Key-Plot-1">Key Plot 1<a class="anchor-link" href="#Key-Plot-1">&#182;</a></h2><h3 id="-"> <a class="anchor-link" href="#-">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="#">back to top</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Key-Plot-2">Key Plot 2<a class="anchor-link" href="#Key-Plot-2">&#182;</a></h2><h3 id="-"> <a class="anchor-link" href="#-">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="#">back to top</a></p>
+
 </div>
 </div>
 </div>
@@ -11806,6 +11874,35 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Future-Directions">Future Directions<a class="anchor-link" href="#Future-Directions">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="#">back to top</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="More-Plots">More Plots<a class="anchor-link" href="#More-Plots">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="#">back to top</a></p>
+
 </div>
 </div>
 </div>
