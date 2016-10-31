@@ -11907,25 +11907,6 @@ div#notebook {
 </ul>
 </li>
 </ol>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="#">back to top</a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Limitations">Limitations<a class="anchor-link" href="#Limitations">&#182;</a></h3><h4 id="Kickstarter"><em>Kickstarter</em><a class="anchor-link" href="#Kickstarter">&#182;</a></h4><p>The website has certain rules for generating urls. For each seed value, the page number only goes up to at most 200. Given there are 20 projects per page, we can only get <strong>at most 4000 non-duplicated data entries per iteration</strong>. Therefore, if we want to analyze all of the 300,000+ projects on Kickstarter, we would need to generate a lot more seed values with a mix of different sorting orders to obtain a much larger sample before removing duplicated entries.</p>
 <p>Another downside with the data scraped from Kickstarter.com is that <strong>they do not have the past unsuccessful projects indexed</strong>. Failed projects can only be accessed if one has the original link (e.g. this <a href="https://www.kickstarter.com/projects/skarp/the-skarp-laser-razor-21st-century-shaving?ref=profile_created">laser razor project</a> that was successfully funded but suspended by Kickstarter administration). Hence, if we were to use our current "Most Backed" data for maching learning, the result would be skewed and might lead to false positives.</p>
 <p>One way to go around this issue is to follow the current live projects until they end (the average duration is 30 days). In addition to a relatively fair sample, we would also gain additional meaningful data such as the pledge amount trend or number of backers over time.</p>
