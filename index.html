@@ -11833,7 +11833,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Project-Proposal">Project Proposal<a class="anchor-link" href="#Project-Proposal">&#182;</a></h2>
+<h2 id="Project-Proposal">Project Proposal<a class="anchor-link" href="#Project-Proposal">&#182;</a></h2><h3 id="Part-1:-Data-Analysis">Part 1: Data Analysis<a class="anchor-link" href="#Part-1:-Data-Analysis">&#182;</a></h3><h3 id="Part-2:-Machine-Learning">Part 2: Machine Learning<a class="anchor-link" href="#Part-2:-Machine-Learning">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -11852,14 +11852,12 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Data-Sources">Data Sources<a class="anchor-link" href="#Data-Sources">&#182;</a></h2>
-<pre><code>Last updated: 2016-10-29 6pm PDT
-</code></pre>
-<p>All of my raw data are scraped from <a href="https://www.kickstarter.com">Kickstarter.com</a>.</p>
+<h2 id="Data-Sources">Data Sources<a class="anchor-link" href="#Data-Sources">&#182;</a></h2><p>All of my raw data are scraped from <a href="https://www.kickstarter.com">Kickstarter.com</a>.</p>
 <p>There are currently two raw datasets:</p>
 <ol>
-<li><p><a href="https://github.com/socathie/paperplane/blob/master/data/live.csv">First 4000 live projects</a> that are currently campaigning on Kickstarter (scraped with Python <a href="https://github.com/socathie/paperplane/blob/master/data/live.py">code</a> using BeautifulSoup)</p>
+<li><p><a href="https://github.com/socathie/paperplane/blob/master/data/live.csv">First 4000 <strong>live projects</strong></a> that are currently campaigning on Kickstarter (scraped with Python <a href="https://github.com/socathie/paperplane/blob/master/data/live.py">code</a> using BeautifulSoup)</p>
 <ul>
+<li><em>Last updated: 2016-10-29 5pm PDT</em></li>
 <li>amt.pledged: amount pledged (float)</li>
 <li>blurb: project blurb (string)</li>
 <li>by: project creator (string)</li>
@@ -11874,11 +11872,11 @@ div#notebook {
 <li>url: project url after domain (string)</li>
 </ul>
 </li>
-<li><p><a href="https://github.com/socathie/paperplane/blob/master/data/most_backed.csv">Top 4000 most backed projects</a> ever on Kickstarter (scraped with this <a href="https://github.com/socathie/paperplane/blob/master/data/most_backed.py">code</a>)</p>
+<li><p><a href="https://github.com/socathie/paperplane/blob/master/data/most_backed.csv">Top 4000 <strong>most backed</strong> projects</a> ever on Kickstarter (scraped with this <a href="https://github.com/socathie/paperplane/blob/master/data/most_backed.py">code</a>)</p>
 <ul>
+<li><em>Last updated: 2016-10-29 6pm PDT</em></li>
 <li>amt.pledged</li>
 <li>blurb</li>
-<li>by</li>
 <li>category: project category (string)</li>
 <li>currency</li>
 <li>goal: original pledge goal (float)</li>
@@ -11888,6 +11886,11 @@ div#notebook {
 <li>pledge.tier: pledge tiers in USD (float[])</li>
 <li>title </li>
 <li>url </li>
+</ul>
+</li>
+<li><a href="">Top 4000 most backed projects on Kickstarter with creators</a><ul>
+<li><em>Last updated: 2016-10-30 ?pm PDT</em></li>
+<li>was not used in the data analysis of this proposal </li>
 </ul>
 </li>
 </ol>
@@ -11915,8 +11918,11 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Key-Plot-1">Key Plot 1<a class="anchor-link" href="#Key-Plot-1">&#182;</a></h2><h3 id="Word-Count-of-Project-Title-and-Blurb---Does-it-matter?">Word Count of Project Title and Blurb - Does it matter?<a class="anchor-link" href="#Word-Count-of-Project-Title-and-Blurb---Does-it-matter?">&#182;</a></h3><p><div class='tableauPlaceholder' id='viz1477829871785' style='position: relative'><noscript><a href='http:&#47;&#47;datapolymath.paperplane.io&#47;'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ki&#47;KickstarterProjectTitleandBlurbWordCount&#47;ProjectTitleWordCount&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='KickstarterProjectTitleandBlurbWordCount&#47;ProjectTitleWordCount' /><param name='tabs' value='yes' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ki&#47;KickstarterProjectTitleandBlurbWordCount&#47;ProjectTitleWordCount&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1477829871785');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script></p>
-<h4 id="Observations:">Observations:<a class="anchor-link" href="#Observations:">&#182;</a></h4><ul>
-<li>hello</li>
+<h4 id="Interpretations:">Interpretations:<a class="anchor-link" href="#Interpretations:">&#182;</a></h4><ul>
+<li>Most Backed projects tend to have slightly <strong>longer titles</strong> than live projects.</li>
+<li>Most Backed projects tend to have <strong>slightly (insignificantly) short blurbs</strong> than live projects.</li>
+<li>We may further investigate whether longer project titles attract more backers.</li>
+<li>In addition to the length, content should matter, too. We should investigate whether using invented words as product names correlates with number of backers. We should also investigate whehter non-alphabetical characters play any significant role.</li>
 </ul>
 
 </div>
@@ -11937,9 +11943,13 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Key-Plot-2">Key Plot 2<a class="anchor-link" href="#Key-Plot-2">&#182;</a></h2><h3 id="Pledge-Amount-Tiers-that-Attract-Most-Backers">Pledge Amount Tiers that Attract Most Backers<a class="anchor-link" href="#Pledge-Amount-Tiers-that-Attract-Most-Backers">&#182;</a></h3><p><div class='tableauPlaceholder' id='viz1477834895496' style='position: relative'><noscript><a href='http:&#47;&#47;datapolymath.paperplane.io&#47;'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ki&#47;KickstarterPledgeTiers&#47;TotalNumberofBackersineachPledgeTier&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='KickstarterPledgeTiers&#47;TotalNumberofBackersineachPledgeTier' /><param name='tabs' value='yes' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ki&#47;KickstarterPledgeTiers&#47;TotalNumberofBackersineachPledgeTier&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1477834895496');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script></p>
-<h4 id="Observations:">Observations:<a class="anchor-link" href="#Observations:">&#182;</a></h4><ul>
-<li>hello</li>
+<h2 id="Key-Plot-2">Key Plot 2<a class="anchor-link" href="#Key-Plot-2">&#182;</a></h2><h3 id="Difference-in-%-Frequency-between-Most-Backed-and-Live-Projects-by-State">Difference in % Frequency between Most Backed and Live Projects by State<a class="anchor-link" href="#Difference-in-%-Frequency-between-Most-Backed-and-Live-Projects-by-State">&#182;</a></h3><p><div class='tableauPlaceholder' id='viz1477819468290' style='position: relative'><noscript><a href='http:&#47;&#47;datapolymath.paperplane.io&#47;'><img alt='Discrepancies between Most Backed and Live Projects on Kickstarter by State ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;DiscrepanciesbetweenMostBackedandLiveProjectsonKickstarterbyState&#47;DiscrepanciesbetweenMostBackedandLiveProjectsonKickstarterbyState&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='DiscrepanciesbetweenMostBackedandLiveProjectsonKickstarterbyState&#47;DiscrepanciesbetweenMostBackedandLiveProjectsonKickstarterbyState' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;DiscrepanciesbetweenMostBackedandLiveProjectsonKickstarterbyState&#47;DiscrepanciesbetweenMostBackedandLiveProjectsonKickstarterbyState&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1477819468290');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script></p>
+<h4 id="Interpretations:">Interpretations:<a class="anchor-link" href="#Interpretations:">&#182;</a></h4><ul>
+<li>Projects created in <strong>California</strong> are overwhemingly more successful than those created in other states.</li>
+<li>Projects created in <strong>Florida</strong> are significantly less backed.</li>
+<li>Projects created on the West Coast are generally more backed than those created on the East Coast.</li>
+<li>It is worth to note that, although location seems to be quite important based on the above observations, it is impratical to relocate a company or manufacturer just for that purpose. Also, there might be some <strong>lurking variables</strong> behind the geographical distinctions. For instance, the Silicon Valley in California might have contributed to most of the success in the technology category.</li>
+<li>Upon identifying these lurking variables by further investigating differences between projects in California and the other states, we may be able to significantly increase the probability of success for a Kickstarter campaign.</li>
 </ul>
 
 </div>
@@ -11960,9 +11970,11 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Key-Plot-3">Key Plot 3<a class="anchor-link" href="#Key-Plot-3">&#182;</a></h2><h3 id="Difference-in-%-Frequency-between-Most-Backed-and-Live-Projects-by-State">Difference in % Frequency between Most Backed and Live Projects by State<a class="anchor-link" href="#Difference-in-%-Frequency-between-Most-Backed-and-Live-Projects-by-State">&#182;</a></h3><p><div class='tableauPlaceholder' id='viz1477819468290' style='position: relative'><noscript><a href='http:&#47;&#47;datapolymath.paperplane.io&#47;'><img alt='Discrepancies between Most Backed and Live Projects on Kickstarter by State ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;DiscrepanciesbetweenMostBackedandLiveProjectsonKickstarterbyState&#47;DiscrepanciesbetweenMostBackedandLiveProjectsonKickstarterbyState&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='DiscrepanciesbetweenMostBackedandLiveProjectsonKickstarterbyState&#47;DiscrepanciesbetweenMostBackedandLiveProjectsonKickstarterbyState' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;DiscrepanciesbetweenMostBackedandLiveProjectsonKickstarterbyState&#47;DiscrepanciesbetweenMostBackedandLiveProjectsonKickstarterbyState&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1477819468290');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script></p>
-<h4 id="Observations:">Observations:<a class="anchor-link" href="#Observations:">&#182;</a></h4><ul>
-<li>hello</li>
+<h2 id="Key-Plot-3">Key Plot 3<a class="anchor-link" href="#Key-Plot-3">&#182;</a></h2><h3 id="Pledge-Amount-Tiers-that-Attract-Most-Backers">Pledge Amount Tiers that Attract Most Backers<a class="anchor-link" href="#Pledge-Amount-Tiers-that-Attract-Most-Backers">&#182;</a></h3><p><div class='tableauPlaceholder' id='viz1477834895496' style='position: relative'><noscript><a href='http:&#47;&#47;datapolymath.paperplane.io&#47;'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ki&#47;KickstarterPledgeTiers&#47;TotalNumberofBackersineachPledgeTier&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='KickstarterPledgeTiers&#47;TotalNumberofBackersineachPledgeTier' /><param name='tabs' value='yes' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ki&#47;KickstarterPledgeTiers&#47;TotalNumberofBackersineachPledgeTier&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1477834895496');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script></p>
+<h4 id="Interpretations:">Interpretations:<a class="anchor-link" href="#Interpretations:">&#182;</a></h4><ul>
+<li>From raw data, backers tend to choose <strong>smaller pledge amounts</strong>, e.g. \$15-20, \$25-30, \$35-40.</li>
+<li>Upon normalization, \$15-20 and \$35-40 are still the preferred amounts by most backers. However, several new peaks (\$95-100, \$115-120, \$185-190) emerged. This shows that people are in fact <strong>willing to pay more</strong>, but most campaigns do not have such tiers.</li>
+<li>The above observations are further confirmed by the <strong>exponential decay</strong> of frequency in the tiers as pledge amount increases.</li>
 </ul>
 
 </div>
@@ -11984,8 +11996,10 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Key-Plot-4">Key Plot 4<a class="anchor-link" href="#Key-Plot-4">&#182;</a></h2><h3 id="Aim-High,-Shoot-Higher?">Aim High, Shoot Higher?<a class="anchor-link" href="#Aim-High,-Shoot-Higher?">&#182;</a></h3><p><div class='tableauPlaceholder' id='viz1477826188238' style='position: relative'><noscript><a href='http:&#47;&#47;datapolymath.paperplane.io&#47;'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ki&#47;KickstarterAimHighShoothigher&#47;MedianAmountPledgedv_InitialGoalupto999999&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='KickstarterAimHighShoothigher&#47;MedianAmountPledgedv_InitialGoalupto999999' /><param name='tabs' value='yes' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ki&#47;KickstarterAimHighShoothigher&#47;MedianAmountPledgedv_InitialGoalupto999999&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1477826188238');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script></p>
-<h4 id="Observations:">Observations:<a class="anchor-link" href="#Observations:">&#182;</a></h4><ul>
-<li>hello</li>
+<h4 id="Interpretations:">Interpretations:<a class="anchor-link" href="#Interpretations:">&#182;</a></h4><ul>
+<li>Although the data does not appear to be entirely linear, if we were to fit a linear trendline, the slope is around 2.25 which is <strong>significantly higher than 1</strong>. It suggests that higher campaign goals may correlate to even higher final pledged amounts.</li>
+<li>If we limit the data to initial campaign goals under \$1 million, the increasing trend is even more apparent. In fact, an <strong>exponential</strong> trend line fits better than a linear trendline in this case.</li>
+<li>Among the most backed projects, "aim high, shoot higher" is generally true.</li>
 </ul>
 
 </div>
