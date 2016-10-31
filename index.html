@@ -8456,15 +8456,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -11214,7 +11214,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -11649,7 +11649,7 @@ ul.typeahead-list > li > a {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-    
+
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -11705,14 +11705,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -11796,7 +11796,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Crowdfunding has become one of the main sources of initial capital for small businesses and start up companies that are looking to launch their first products. Websites like <a href="https://www.kickstarter.com">Kickstarter</a> and <a href="https://www.indiegogo.com/">Indiegogo</a> provide a platform for millions of creators to present their innovative ideas to the public. This is a win-win situation where creators could accumulate initial fund while the public get access to cutting-edge prototypical products that are not available in the market yet.</p>
+<p>Crowdfunding has become one of the main sources of initial capital for small businesses and start up companies that are looking to launch their first products. Websites like <a href="https://www.kickstarter.com" target="_blank">Kickstarter</a> and <a href="https://www.indiegogo.com/" target="_blank">Indiegogo</a> provide a platform for millions of creators to present their innovative ideas to the public. This is a win-win situation where creators could accumulate initial fund while the public get access to cutting-edge prototypical products that are not available in the market yet.</p>
 <p>At any given point, Indiegogo has around 10,000 live campaigns while Kickstarter has 6,000. It has become increasingly difficult for projects to stand out of the crowd. Of course, advertisements via various channels are by far the most important factor to a successful campaign. However, for creators with a smaller budget, this leaves them wonder,</p>
 <p><strong>"How do we increase the probability of success of our campaign starting from the very moment we create our project on these websites?"</strong></p>
 <p>In particular, here are some of the questions we want to answer:</p>
@@ -11865,10 +11865,10 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Data-Sources">Data Sources<a class="anchor-link" href="#Data-Sources">&#182;</a></h2><p>All of my raw data are scraped from <a href="https://www.kickstarter.com">Kickstarter.com</a>.</p>
+<h2 id="Data-Sources">Data Sources<a class="anchor-link" href="#Data-Sources">&#182;</a></h2><p>All of my raw data are scraped from <a href="https://www.kickstarter.com" target="_blank">Kickstarter.com</a>.</p>
 <p>There are currently two raw datasets:</p>
 <ol>
-<li><p><a href="https://github.com/socathie/paperplane/blob/master/data/live.csv">First 4000 <strong>live projects</strong></a> that are currently campaigning on Kickstarter (scraped with Python <a href="https://github.com/socathie/paperplane/blob/master/data/live.py">code</a> using BeautifulSoup)</p>
+<li><p><a href="https://github.com/socathie/paperplane/blob/master/data/live.csv" target="_blank">First 4000 <strong>live projects</strong></a> that are currently campaigning on Kickstarter (scraped with Python <a href="https://github.com/socathie/paperplane/blob/master/data/live.py" target="_blank">code</a> using BeautifulSoup)</p>
 <ul>
 <li><em>Last updated: 2016-10-29 5pm PDT</em></li>
 <li>amt.pledged: amount pledged (float)</li>
@@ -11885,7 +11885,7 @@ div#notebook {
 <li>url: project url after domain (string)</li>
 </ul>
 </li>
-<li><p><a href="https://github.com/socathie/paperplane/blob/master/data/most_backed.csv">Top 4000 <strong>most backed</strong> projects</a> ever on Kickstarter (scraped with this <a href="https://github.com/socathie/paperplane/blob/master/data/most_backed.py">code</a>)</p>
+<li><p><a href="https://github.com/socathie/paperplane/blob/master/data/most_backed.csv" target="_blank">Top 4000 <strong>most backed</strong> projects</a> ever on Kickstarter (scraped with this <a href="https://github.com/socathie/paperplane/blob/master/data/most_backed.py" target="_blank">code</a>)</p>
 <ul>
 <li><em>Last updated: 2016-10-29 6pm PDT</em></li>
 <li>amt.pledged</li>
@@ -11908,9 +11908,9 @@ div#notebook {
 </li>
 </ol>
 <h3 id="Limitations">Limitations<a class="anchor-link" href="#Limitations">&#182;</a></h3><h4 id="Kickstarter"><em>Kickstarter</em><a class="anchor-link" href="#Kickstarter">&#182;</a></h4><p>The website has certain rules for generating urls. For each seed value, the page number only goes up to at most 200. Given there are 20 projects per page, we can only get <strong>at most 4000 non-duplicated data entries per iteration</strong>. Therefore, if we want to analyze all of the 300,000+ projects on Kickstarter, we would need to generate a lot more seed values with a mix of different sorting orders to obtain a much larger sample before removing duplicated entries.</p>
-<p>Another downside with the data scraped from Kickstarter.com is that <strong>they do not have the past unsuccessful projects indexed</strong>. Failed projects can only be accessed if one has the original link (e.g. this <a href="https://www.kickstarter.com/projects/skarp/the-skarp-laser-razor-21st-century-shaving?ref=profile_created">laser razor project</a> that was successfully funded but suspended by Kickstarter administration). Hence, if we were to use our current "Most Backed" data for maching learning, the result would be skewed and might lead to false positives.</p>
+<p>Another downside with the data scraped from Kickstarter.com is that <strong>they do not have the past unsuccessful projects indexed</strong>. Failed projects can only be accessed if one has the original link (e.g. this <a href="https://www.kickstarter.com/projects/skarp/the-skarp-laser-razor-21st-century-shaving?ref=profile_created" target="_blank">laser razor project</a> that was successfully funded but suspended by Kickstarter administration). Hence, if we were to use our current "Most Backed" data for maching learning, the result would be skewed and might lead to false positives.</p>
 <p>One way to go around this issue is to follow the current live projects until they end (the average duration is 30 days). In addition to a relatively fair sample, we would also gain additional meaningful data such as the pledge amount trend or number of backers over time.</p>
-<h4 id="Indiegogo"><em>Indiegogo</em><a class="anchor-link" href="#Indiegogo">&#182;</a></h4><p>Indiegogo has a unique feature that Kickstarter does not - <a href="https://support.indiegogo.com/hc/en-us/articles/205138007-Choose-Your-Funding-Type-Can-I-Keep-My-Money-">flexible funding</a>. This feature makes it difficult to define a performance benchmark. Moreover, the urls generated by the website do not have a generating parameter. <strong>This makes my current method of scraping data inapplicable.</strong> However, Indiegogo does contain a much larger database than Kickstarter so I would have to investigate on how to extract data from their website.</p>
+<h4 id="Indiegogo"><em>Indiegogo</em><a class="anchor-link" href="#Indiegogo">&#182;</a></h4><p>Indiegogo has a unique feature that Kickstarter does not - <a href="https://support.indiegogo.com/hc/en-us/articles/205138007-Choose-Your-Funding-Type-Can-I-Keep-My-Money-" target="_blank">flexible funding</a>. This feature makes it difficult to define a performance benchmark. Moreover, the urls generated by the website do not have a generating parameter. <strong>This makes my current method of scraping data inapplicable.</strong> However, Indiegogo does contain a much larger database than Kickstarter so I would have to investigate on how to extract data from their website.</p>
 
 </div>
 </div>
