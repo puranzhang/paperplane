@@ -11796,7 +11796,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Crowdfunding has become one of the main sources of initial capital for small businesses and start up companies that are looking to launch their first products. Websites like <a href="https://www.kickstarter.com">Kickstart</a> and <a href="https://www.indiegogo.com/">Indiegogo</a> provide a platform for millions of creators to present their innovative ideas to the public. This is a win-win situation where creators could accumulate initial fund while the public get access to cutting-edge prototypical products that are not available in the market yet.</p>
+<p>Crowdfunding has become one of the main sources of initial capital for small businesses and start up companies that are looking to launch their first products. Websites like <a href="https://www.kickstarter.com">Kickstarter</a> and <a href="https://www.indiegogo.com/">Indiegogo</a> provide a platform for millions of creators to present their innovative ideas to the public. This is a win-win situation where creators could accumulate initial fund while the public get access to cutting-edge prototypical products that are not available in the market yet.</p>
 <p>At any given point, Indiegogo has around 10,000 live campaigns while Kickstarter has 6,000. It has become increasingly difficult for projects to stand out of the crowd. Of course, advertisements via various channels are by far the most important factor to a successful campaign. However, for creators with a smaller budget, this leaves them wonder,</p>
 <p><strong>"How do we increase the probability of success of our campaign starting from the very moment we create our project on these websites?"</strong></p>
 <p>In particular, here are some of the questions we want to answer:</p>
@@ -11833,7 +11833,20 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Project-Proposal">Project Proposal<a class="anchor-link" href="#Project-Proposal">&#182;</a></h2><h3 id="Part-1:-Data-Analysis">Part 1: Data Analysis<a class="anchor-link" href="#Part-1:-Data-Analysis">&#182;</a></h3><h3 id="Part-2:-Machine-Learning">Part 2: Machine Learning<a class="anchor-link" href="#Part-2:-Machine-Learning">&#182;</a></h3>
+<h2 id="Project-Proposal">Project Proposal<a class="anchor-link" href="#Project-Proposal">&#182;</a></h2><p>The project is divided into two stages. In the first stage, I will accumulate as much data as possible by scraping off the aforementioned websites. I will then perform preliminary analysis on those data to identify the key variables and factors to be included in the supervised learning process. In the second stage, I will perform supervised learning from previous training data to predict the success or failure of a set of ongoing projects as testing data.</p>
+<h3 id="Part-1:-Data-Mining">Part 1: Data Mining<a class="anchor-link" href="#Part-1:-Data-Mining">&#182;</a></h3><ol>
+<li>Scrape data from all 300,000+ successful projects</li>
+<li>Attempt to obtain data from previous failed projects</li>
+<li>Follow the website for a week or two to keep track of new projects every day</li>
+<li>For the next 30-40 days (typical Kickstarter campaign duration), record daily updates of these projects</li>
+<li>Clean this dataset up to be used as training data for supervised machine learning</li>
+<li>Follow the website for another week or two to obtain new projects as testing dataset</li>
+</ol>
+<h3 id="Part-2:-Machine-Learning">Part 2: Machine Learning<a class="anchor-link" href="#Part-2:-Machine-Learning">&#182;</a></h3><ol>
+<li>Using the training dataset, perform machine learning techniques such as Random Forests</li>
+<li>Test our model on the testing dataset</li>
+</ol>
+
 </div>
 </div>
 </div>
